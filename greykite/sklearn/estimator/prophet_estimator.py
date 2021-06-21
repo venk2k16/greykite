@@ -233,7 +233,8 @@ class ProphetEstimator(BaseForecastEstimator):
         # This implementation assumes that the regressor(s) are provided in time series df, alongside target column.
         if self.add_regressor_dict is not None:
             for reg_col, reg_params in self.add_regressor_dict.items():
-                self.model.add_regressor(name=reg_col, **reg_params)
+                if reg_col != 'cap' and reg_col != 'floor':
+                    self.model.add_regressor(name=reg_col, **reg_params)
 
         # if custom seasonality is provided, we supply it to Prophet model
         if self.add_seasonality_dict is not None:
