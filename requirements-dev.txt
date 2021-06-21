@@ -3,7 +3,7 @@ Click==7.0
 Cython==0.29.23
 coverage==4.5.4
 cvxpy==1.1.12
-fbprophet==0.5
+fbprophet==0.7.1
 flake8==3.7.8
 holidays==0.9.10
 ipykernel==4.8.2
@@ -24,7 +24,7 @@ patsy==0.5.1
 Pillow==8.0.1
 pip==20.3.3
 plotly==3.10.0
-pystan==2.18.0.0
+pystan==2.19.1.1
 pytest==4.6.5
 pytest-runner==5.1
 pyzmq==22.0.3
